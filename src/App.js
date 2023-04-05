@@ -67,7 +67,7 @@ function App() {
     async function fetchData() {
       try {
         
-        // fetch data in case we chane currency 
+        // fetch and update data in case we chane currency 
         if (fromCurrency != null && toCurrency != null) {
           const response = await fetch(
             `https://api.apilayer.com/exchangerates_data/latest?symbols=${toCurrency}&base=${fromCurrency}`,
